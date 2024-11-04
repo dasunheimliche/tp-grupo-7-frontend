@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Syncopate:wght@400;700&display=swap");
+
+:root {
+  --margin: 9.375rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+/** NAV */
+
+nav {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px var(--margin);
+}
+
+nav .nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  font-size: 14px;
+  padding: 0.875rem 0.9375rem;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+nav .nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3125rem 0px;
+}
+
+nav .nav-links {
+  display: flex;
+}
+
+/** HERO */
+
+.hero {
+  width: 100%;
+  height: 47.5rem;
+  position: relative;
+  padding: 0px var(--margin);
+  margin-bottom: 8.5rem;
+}
+
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+}
+
+.hero-content {
+  padding: 0px 5rem;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.hero-title {
+  font-size: 4.25rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+
+.hero-paragraph {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.625rem;
+}
+
+/** SECTIONS */
+
+section {
+  padding: 0px var(--margin);
+  position: relative;
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.section-underline {
+  width: 7.75rem;
+  height: 3px;
+  background-color: rgb(199, 161, 122);
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+#products .section-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.625rem;
+}
+
+.product-overlays {
+  width: 20%;
+  aspect-ratio: 1/1;
+  background-color: gray;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
