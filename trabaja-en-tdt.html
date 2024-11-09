@@ -7,54 +7,72 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-          <div class="nav-logo">TIENDA TÈ</div>
-          <ul class="nav-links">
-            <li>NUESTRO TÈ</li>
-            <li>TUTORIALES</li>
-            <li>NUESTRO MENÚ</li>
-            <li>TRABAJA CON NOSOTROS</li>
-            <li>FRANQUICIAS</li>
-            <li>CONTACTO</li>
-          </ul>
-          <div class="nav-empty"></div>
-        </div>
-      </nav>
-
-    <section id="formularioContacto">
-        <h4>SUMATE EN NUESTRO EQUIPO</h4>
-        <h2 class="subtituloFranquicia">TRABAJÁ EN TDT</h2>
-        <p class="textoFranquicia">Querés ser parte de este equipo? Dejanos tus datos para recibir mas información, y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia Tienda de Té!</p>
+  <nav>
+    <div class="nav-content">
+      <div class="nav-logo">TIENDA TÈ</div>
+      <button class="hamburger-btn" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li>NUESTRO TÈ</li>
+        <li>TUTORIALES</li>
+        <li>NUESTRO MENÚ</li>
+        <li>TRABAJA CON NOSOTROS</li>
+        <li>FRANQUICIAS</li>
+        <li>CONTACTO</li>
+      </ul>
+    </div>
+  </nav>
+      
+      <main>
+        <div class="formulario-contenedor-trabajo"></div>
+    <section id="formularioContactoTrabajo">
+        <h4 class="subtituloTrabajo">SUMATE EN NUESTRO EQUIPO</h4>
+        <h2 class="tituloTrabajo">TRABAJÁ EN TDT</h2>
+        <p class="textoTrabajo">Querés ser parte de este equipo? Dejanos tus datos para recibir mas información, y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia Tienda de Té!</p>
     
-        <div>
-            <form class="formulario">
+        <div class="formularioTrabajo">
+            <form >
+              <div class="form-column-trabajo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" required>
+                <label for="pregunta3">¿Cuál es tu puesto de trabajo?</label>
+                <input type="text" id="pregunta3" name="pregunta3" required>
+              </div>
+              <div class="form-column-trabajo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+               
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required>
+                
+                <label for="pregunta4">Adjuntar CV</label>
+                <div class="input-container">
+                  <button type="button" class="btn-adjuntar">Elegir archivo</button>
+                  <span class="text-acompanante">No se ha seleccionado ningún archivo.</span>
+                </div>
+              </div>
+              
 
-                <label for="nombre">Nombre</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="apellido">Apellido</label><br>
-                <input type="text" id="apellido" name="apellido" required><br>
-                <label for="email">E-mail</label><br>
-                <input type="text" id="email" name="email" required><br>
-                <label for="telefono">Teléfono</label><br>
-                <input type="text" id="telefono" name="telefono" required><br>
-                <label for="pregunta3">¿Cuál es tu puesto de trabajo?</label><br>
-                <input type="text" id="pregunta3" name="pregunta3" required><br>
-                <label for="pregunta4">Adjuntar CV</label><br>
-                <input type="text" id="pregunta4" name="pregunta4" required><br>
-                <label for="mensaje">Mensaje</label><br>
-                <textarea type="text" id="mensaje" rows="8" name="mensaje"></textarea>
-                <br>
+              <div class="mensaje-field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="8" name="mensaje"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="btn-trabajo" type="submit">Enviar</button>
 
+              </div>
+            
             </form>
 
         </div>
         
     </section>
     
-</body>
+  </main>
 
 <footer class="footer-container">
     <div class="footer-content">
@@ -71,7 +89,7 @@
         <h3>Necesitás ayuda</h3>
         <ul>
           <li><a href="#">Tutoriales</a></li>
-          <li><a href="#">Trabajá en TDC</a></li>
+          <li><a href="#">Trabajá en TDT</a></li>
           <li><a href="#">Franquicias</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
@@ -91,7 +109,7 @@
         <h3>Conectate con nosotros</h3>
         <div class="social-links">
             <a href="#Facebook" aria-label="Visitar nuestro Facebook oficial"><img src="images/facebook-icon.svg" alt="Facebook"></a>
-            <a href="#X" aria-label="Visitar nuestro X oficial"><img src="images/twitter-icon.svg" alt="X"></a>
+           
             <a href="#Instagram" aria-label="Visitar nuestro Instagram oficial"><img src="images/instagram-icon.svg" alt="Instagram"></a>
         </div>
       </div>
