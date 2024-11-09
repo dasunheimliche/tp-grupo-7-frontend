@@ -10,6 +10,11 @@
     <nav>
       <div class="nav-content">
         <div class="nav-logo">TIENDA TÈ</div>
+        <button class="hamburger-btn" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
           <li>NUESTRO TÈ</li>
           <li>TUTORIALES</li>
@@ -18,7 +23,6 @@
           <li>FRANQUICIAS</li>
           <li>CONTACTO</li>
         </ul>
-        <div class="nav-empty"></div>
       </div>
     </nav>
     <main>
@@ -231,4 +235,21 @@
       </div>
     </footer>
   </body>
+  <script>
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburgerBtn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    const navItems = document.querySelectorAll(".nav-links li");
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        hamburgerBtn.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
 </html>
