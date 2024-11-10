@@ -1,0 +1,244 @@
+/* ///////// Tutoriales ///////// */
+
+/* Ajustes general */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 14px Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+/* Ajustes texto */
+
+.tutorial{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:grey;
+}
+
+#caja3{
+    font-family: cursive;
+}
+
+#caja4{
+    font-family: cursive;
+    margin-bottom: 10p;
+}
+
+
+main{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seccion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.seccion .contenido {
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.seccion .fila {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.seccion .tarjeta {
+    width: 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.seccion .tarjeta img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.4);
+    transition: all;
+    transition-duration: 0.3s;
+
+}
+
+.seccion .tarjeta:hover img {
+    transform: scale(1.2);
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+
+h5 {
+    margin: 0px;
+}
+
+
+/* Ajustes CONTACTO */
+
+h2{
+    color: rgb(53, 51, 51);
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    color: grey;
+    gap: 70px;
+}
+
+.comunicar{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    width: 100%;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+label{
+    color: #464646;
+    font-size: 15px;
+}
+
+input{
+    height: 40px;
+    border: 2px solid rgba(129, 129, 129, .2);
+    width: 100%;
+    
+}
+
+.cajas{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button{
+    background-color: #c7a17a;
+    color: #fff;
+    font-size: 17px;
+    border: 2px solid rgba(129, 129, 129, .2);
+    height: 40px;
+    width: 100px;
+}
+
+textarea{
+    height: 190px;
+    border: 2px solid rgba(129, 129, 129, .2);
+    resize: vertical;
+    width: 100%;
+}
+
+
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    outline: none;
+}
+
+
+/* Redes sociales */
+.iconos-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+}
+
+#facebook{
+    color: black;
+}
+
+#instagram{
+    color: black;
+}
+
+
+
+
+@media (max-width: 690px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 370px){
+    .redes{
+        display: flex;
+        flex-direction: column;
+        text-wrap: wrap;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 295px){
+    main{
+        padding: 20px 40px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 236px){
+    main{
+        padding: 10px 30px 10px;
+
+    }
+
+}
+
+@media (max-width: 190px){
+    
+
+    .contacto{
+        width: 100%;
+        padding: 0px;
+    }
+}
