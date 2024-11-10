@@ -112,7 +112,8 @@ h2{
 .contacto{
     display: flex;
     flex-direction: row;
-    width: 65%;
+    justify-content: start;
+    width: 100%;
     color: grey;
     gap: 70px;
 }
@@ -120,13 +121,14 @@ h2{
 .comunicar{
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .redes{
     display: flex;
     flex-direction: column;
     text-wrap: nowrap;
-    width: 100%;
+    width: 60%;
 }
 
 
@@ -202,6 +204,10 @@ input, textarea {
     .contacto{
         display: flex;
         flex-direction: column;
+    }
+
+    .comunicar {
+        width: 100%;
     }
 }
 
