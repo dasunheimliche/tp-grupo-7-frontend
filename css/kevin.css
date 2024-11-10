@@ -57,6 +57,7 @@ nav a {
   .nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
   }
   
   .nav-links {
@@ -131,6 +132,8 @@ main{
     flex-direction: column;
     gap: 20px;
 }
+
+/* CONTENIDO */
 
 .seccion {
     width: 100%;
@@ -223,21 +226,24 @@ h2{
     width: 100%;
     color: grey;
     gap: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .comunicar{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 
 .redes{
     display: flex;
     flex-direction: column;
     text-wrap: nowrap;
-    width: 60%;
+    width: 50%;
 }
 
+/* AJUSTES DEL FORMULARIO */
 
 .formulario{
     display: flex;
@@ -302,6 +308,11 @@ input, textarea {
 
 #instagram{
     color: black;
+}
+
+
+.redes a {
+  cursor:pointer;
 }
 
 
@@ -409,6 +420,10 @@ input, textarea {
     margin-top: 1.875rem;
   }
 
+
+  /* MEDIA QUERYS */
+
+
   @media screen and (max-width: 1200px) {
     :root {
       --margin: 4.375rem;
@@ -476,26 +491,15 @@ input, textarea {
         width: 100%;
     }
 
-}
+    .comunicar{
+      margin-top: 50px;
+    }
 
-@media (max-width: 236px){
-    main{
-        padding: 10px 30px 10px;
-
+    .introduccion{
+      margin-top: 50px;
     }
 
 }
-
-@media (max-width: 190px){
-    
-
-    .contacto{
-        width: 100%;
-        padding: 0px;
-    }
-}
-
-
 
 
 @media screen and (max-width: 992px) {
