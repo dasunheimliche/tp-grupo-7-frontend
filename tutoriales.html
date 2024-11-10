@@ -7,7 +7,26 @@
     <title>Tutoriales - Tienda de Té</title>
 </head>
 <body>
-    <header>HEADER</header>
+
+    <nav>
+        <div class="nav-content">
+          <div class="nav-logo"><a href="index.html">TIENDA TÈ</a></div>
+          <button class="hamburger-btn" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <a href="./tienda.html"><li>NUESTRO TÈ</li></a>
+            <a href="./tutoriales.html"><li>TUTORIALES</li></a>
+            <a href="./menu-tienda.html"><li>NUESTRO MENÚ</li></a>
+            <a href="./trabaja-en-tdt.html"><li>TRABAJA CON NOSOTROS</li></a>
+            <a href="./franquicias.html"><li>FRANQUICIAS</li></a>
+            <a href="./contacto.html"><li>CONTACTO</li></a>
+          </ul>
+        </div>
+      </nav>
+    
     <main>
         <div class="introduccion">
             <div class="tutorial">
@@ -37,7 +56,7 @@
                     <div class="tarjeta">
                         <img src="./img/rec1-Te Chai Latte.jpg" alt="">
                         <h3>TÉ CHAI LATTE</h3>
-                        <p>VER PASO A PASO</p>
+                        <a href="#"><p>VER PASO A PASO</p></a>
                     </div>
                     <div class="tarjeta">
                         <img src="./img/rec2-Te Hibisco y limon.jpg" alt="">
@@ -49,12 +68,12 @@
                     <div class="tarjeta">
                         <img src="./img/rec3-Te helado de Durazno.jpg" alt="">
                         <h3>TÉ HELADO DE DURAZNO</h3>
-                        <p>VER PASO A PASO</p>
+                        <a href="#"><p>VER PASO A PASO</p></a>
                     </div>
                     <div class="tarjeta">
                         <img src="./img/rec4-Te Curcuma y jengibre.jpg" alt="">
                         <h3>TÉ DE CURCUMA Y JENGIBRE</h3>
-                        <p>VER PASO A PASO</p>
+                        <a href="#"><p>VER PASO A PASO</p></a>
                     </div>
                 </div>
             </div>
@@ -62,6 +81,51 @@
        
     </main>
     
-    <footer>FOOTER</footer>
+    <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contenidos</h3>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./tienda.html">Nuestro Té</a></li>
+              <li><a href="./menu-tienda.html">Nuestro menú</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Necesitás ayuda</h3>
+            <ul>
+              <li><a href="./tutoriales.html">Tutoriales</a></li>
+              <li><a href="./trabaja-en-tdt.html">Trabajá en TDC</a></li>
+              <li><a href="./franquicias.html">Franquicias</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Suscribite a nuestro newsletter</h3>
+            <div class="newsletter-section">
+              <div class="email-input">
+                <input type="email" placeholder="Tu email" />
+                <button>SUSCRIBIRME</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Conectate con nosotros</h3>
+            <div class="social-links">
+              <a href="#" class="social-icon">f</a>
+              <a href="#" class="social-icon">in</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="copyright">
+          © Copyright 2024 Tienda de tè - Todos los derechos reservados.<br />
+          Todos los logos, productos, marcas y nombres aquí utilizados son
+          propiedad registrada.
+        </div>
+      </footer>
 </body>
 </html>

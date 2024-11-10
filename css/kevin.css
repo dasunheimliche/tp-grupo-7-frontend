@@ -5,7 +5,9 @@
 /* ///////// Tutoriales ///////// */
 
 /* Ajustes general */
-
+:root {
+    --margin: 9.375rem;
+  }
 
 * {
     box-sizing: border-box;
@@ -407,6 +409,11 @@ input, textarea {
     margin-top: 1.875rem;
   }
 
+  @media screen and (max-width: 1200px) {
+    :root {
+      --margin: 4.375rem;
+    }
+  }
 
 @media (max-width: 800px){
     .seccion .tarjeta{
@@ -415,6 +422,11 @@ input, textarea {
     }
 }
 
+@media screen and (max-width: 768px) {
+    :root {
+      --margin: 1.375rem;
+    }
+}
 
 @media (max-width: 690px){
     .contacto{
