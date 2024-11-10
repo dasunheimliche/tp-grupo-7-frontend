@@ -9,14 +9,14 @@
 <body>
   <nav>
     <div class="nav-content">
-      <div class="nav-logo">TIENDA TÈ</div>
+      <div class="nav-logo">TIENDA TÉ</div>
       <button class="hamburger-btn" aria-label="Menú">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li>NUESTRO TÈ</li>
+        <li>NUESTRO TÉ</li>
         <li>TUTORIALES</li>
         <li>NUESTRO MENÚ</li>
         <li>TRABAJA CON NOSOTROS</li>
@@ -28,10 +28,11 @@
       
       <main>
         <div class="formulario-contenedor-trabajo"></div>
-    <section id="formularioContactoTrabajo">
-        <h4 class="subtituloTrabajo">SUMATE EN NUESTRO EQUIPO</h4>
+       <section id="formularioContactoTrabajo">
+        <h4 class="subtituloTrabajo">SUMATE A NUESTRO EQUIPO</h4>
         <h2 class="tituloTrabajo">TRABAJÁ EN TDT</h2>
-        <p class="textoTrabajo">Querés ser parte de este equipo? Dejanos tus datos para recibir mas información, y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia Tienda de Té!</p>
+        <div class="section-underline"></div>
+        <p class="textoTrabajo">¿Querés ser parte de este equipo? Dejanos tus datos para recibir más información y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia Tienda de Té.</p>
     
         <div class="formularioTrabajo">
             <form >
@@ -108,18 +109,37 @@
       <div class="footer-section">
         <h3>Conectate con nosotros</h3>
         <div class="social-links">
-            <a href="#Facebook" aria-label="Visitar nuestro Facebook oficial"><img src="images/facebook-icon.svg" alt="Facebook"></a>
+            <a href="#Facebook" aria-label="Visitar nuestro Facebook oficial"><img src="img/facebook-icon.svg" alt="Facebook"></a>
            
-            <a href="#Instagram" aria-label="Visitar nuestro Instagram oficial"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+            <a href="#Instagram" aria-label="Visitar nuestro Instagram oficial"><img src="img/instagram-icon.svg" alt="Instagram"></a>
         </div>
       </div>
     </div>
 
     <div class="copyright">
-      © Copyright 2021 Tienda de tè - Todos los derechos reservados.<br />
+      © Copyright 2021 Tienda de Té - Todos los derechos reservados.<br />
       Todos los logos, productos, marcas y nombres aquí utilizados son
       propiedad registrada.
     </div>
   </footer>
 </body>
+
+<script>
+  const hamburgerBtn = document.querySelector(".hamburger-btn");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburgerBtn.addEventListener("click", function () {
+    this.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  const navItems = document.querySelectorAll(".nav-links li");
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      hamburgerBtn.classList.remove("active");
+      navLinks.classList.remove("active");
+    });
+  });
+</script>
+
 </html>
