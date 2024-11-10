@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabaja-en-tienda-de-te</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="nav-logo"><a href="index.html">TIENDA TÈ</a></div>
+        <button class="hamburger-btn" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <a href="./tienda.html"><li>NUESTRO TÈ</li></a>
+          <a href="./tutoriales.html"><li>TUTORIALES</li></a>
+          <a href="./menu-tienda.html"><li>NUESTRO MENÚ</li></a>
+          <a href="./trabaja-en-tdt.html"><li>TRABAJA CON NOSOTROS</li></a>
+          <a href="./franquicias.html"><li>FRANQUICIAS</li></a>
+          <a href="./contacto.html"><li>CONTACTO</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="formulario-contenedor-trabajo"></div>
+      <section id="formularioContactoTrabajo">
+        <h4 class="subtituloTrabajo">SUMATE A NUESTRO EQUIPO</h4>
+        <h2 class="tituloTrabajo">TRABAJÁ EN TDT</h2>
+        <div class="section-underline"></div>
+        <p class="textoTrabajo">
+          ¿Querés ser parte de este equipo? Dejanos tus datos para recibir más
+          información y nos pondremos en contacto para contarte todas las
+          posibilidades de tu próxima franquicia Tienda de Té.
+        </p>
+
+        <div class="formularioTrabajo">
+          <form>
+            <div class="form-column-trabajo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" required />
+              <label for="pregunta3">¿Cuál es tu puesto de trabajo?</label>
+              <input type="text" id="pregunta3" name="pregunta3" required />
+            </div>
+            <div class="form-column-trabajo">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required />
+
+              <label for="telefono">Teléfono</label>
+              <input type="text" id="telefono" name="telefono" required />
+
+              <label for="pregunta4">Adjuntar CV</label>
+              <div class="input-container">
+                <button type="button" class="btn-adjuntar">
+                  Elegir archivo
+                </button>
+                <span class="text-acompanante"
+                  >No se ha seleccionado ningún archivo.</span
+                >
+              </div>
+            </div>
+
+            <div class="mensaje-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="8" name="mensaje"></textarea>
+
+              <button class="btn-trabajo" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contenidos</h3>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tienda.html">Nuestro Té</a></li>
+            <li><a href="./menu-tienda.html">Nuestro menú</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Necesitás ayuda</h3>
+          <ul>
+            <li><a href="./tutoriales.html">Tutoriales</a></li>
+            <li><a href="./trabaja-en-tdt.html">Trabajá en TDC</a></li>
+            <li><a href="./franquicias.html">Franquicias</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Suscribite a nuestro newsletter</h3>
+          <div class="newsletter-section">
+            <div class="email-input">
+              <input type="email" placeholder="Tu email" />
+              <button>SUSCRIBIRME</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Conectate con nosotros</h3>
+          <div class="social-links">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © Copyright 2024 Tienda de tè - Todos los derechos reservados.<br />
+        Todos los logos, productos, marcas y nombres aquí utilizados son
+        propiedad registrada.
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburgerBtn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    const navItems = document.querySelectorAll(".nav-links li");
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        hamburgerBtn.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+</html>
